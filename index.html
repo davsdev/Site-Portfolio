@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" href="img/logoico.ico">
+    <title>davs</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="/index.html">
+                <img src="/img/logo.png" alt="logotipo">
+            </a>
+        </div>
+        <nav class="menu-pc">
+            <ul>
+                <li>
+                    <a href="#" style="background-color: crimson; color: whitesmoke;"> _HOME</a>
+                </li>
+                <li><a href="#">_SOBRE</a></li>
+                <li><a href="#">_PROJETOS</a></li>
+                <li><a href="#">_CONTATO</a></li>
+            </ul>
+        </nav>
+        
+
+        <div id="menumobile">
+            <div id="menumobile-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="navmobile" id="navmobile">
+              <ul>
+                <li><a href="#">_HOME</a></li>
+                <li><a href="#">_SOBRE</a></li>
+                <li><a href="#">_PROJETOS</a></li>
+                <li><a href="#">_CONTATO</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
+
+
+
+        <img id="dark" src="img/darkmode.svg" alt="Dark Mode" onclick="escurecer()" style="width: 40px; height: 40px;">
+    </header>
+    <main>
+        <section id="boasvindas">
+            <div class="intro">
+                <div class="apresentacao">
+                    <h1 id="sombra">Oi, sou Davi!</h1>
+                    <p>Sou designer e desenvolvedor front-end em formação.<br>
+                    Quero proporcionar a melhor experiência em seu site,<br>
+                    buscando trazer boa forma e funcionalidade à sua ideia.</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div id="projetos">
+            <div class="projeto-card">
+                <a href="/calculadora.html"> 
+                    <div class="projeto-imagem"></div>
+                    <div class="projeto-conteudo">
+                        <h3>Calculadora</h3>
+                        <p>Aplicação de flex-grid e funções onclick.</p>
+                    </div>
+                </a>
+            </div>            
+            <div class="projeto-card">
+                <div class="projeto2-imagem"></div>
+                <div class="projeto-conteudo">
+                    <h3>Qual seu IMC?</h3>
+                    <p>Cálculo de IMC e mensagem personalizada.</p>
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <div class="projeto3-imagem"></div>
+                <div class="projeto-conteudo">
+                    <h3>Melhor combustível</h3>
+                    <p>Custo-benefício ao abastercer seu carro.</p>
+                </div>
+            </div>
+
+            <div class="projeto-card">
+                <div class="projeto4-imagem"></div>
+                <div class="projeto-conteudo">
+                    <h3>davs.dev</h3>
+                    <p>Documentações em design para meu site.</p>
+                </div>
+            </div>
+        </div>
+        </section>        
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div class="copyright">
+                <p>&copy; 2023</p>
+                <p><a href="#">Davi da Silva</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="social">
+                <p>Social</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/davi-da-silva" target="_blank" class="social-icon">
+                        <img src="/img/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="#" class="social-icon"><img src="/img/github-sign.png" alt="GitHub"></a>
+                </p>
+            </div>
+        </div>
+    </footer>  
+    <img id="voltar-ao-topo" src="/img/top.svg" alt="Voltar ao Topo">
+    <script src="/scripts/script.js"></script>  
+</body>
+
+</html>

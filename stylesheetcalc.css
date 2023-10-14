@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PTSerifCaption';
+    src: url(fonts/PTSerifCaption/PTSerifCaption-Regular.ttf)
+}
+
+body {
+    transition: ease 1s;
+    font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/img/numbersbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+.descricao-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: justify;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff6183, #40c0bc, #68e4a6);
+}
+
+@media (max-width: 768px) {
+    .descricao-projeto {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 100px;
+    }
+
+    .descricao-projeto p {
+        margin: -20px;
+    }
+}
+
+.descricao-projeto p {
+    text-shadow: #242424;
+}
+
+.descricao-projeto h4 {
+    text-align: center;
+}
+
+.calculator-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 300px;
+    padding: 2rem;
+    border-radius: 5%;
+    background-color: #242424;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        max-width: 400px;
+        border-radius: 10px;
+    }
+}
+
+.display {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    grid-column: span 4;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    border-radius: 0.3rem;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgb(51, 75, 153);
+    border: 0;
+    border-radius: 0.3rem;
+}
+
+.btn:hover {
+    transition: 100ms;
+    background-color: #0c4077;
+    cursor: pointer;
+}
+
+.btnequal {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ffb006;
+    border: 0;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+}
+
+.btnequal:hover {
+    transition: 100ms;
+    background-color: #db7901;
+    cursor: pointer;
+}
+
+.btnoperador {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #0785d4;
+    border: 0;
+    border-radius: 0.3rem;
+    font-weight: bolder;
+}
+
+.btnoperador:hover {
+    transition: 100ms;
+    background-color: #044292;
+    cursor: pointer;
+}
+
+.calcheader {
+    grid-column: span 4;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #242424;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    border: 0;
+}
+
+footer {
+    background-color: darkslategray;
+    color: whitesmoke;
+    display: flex;
+    padding: 60px;
+    left: 30px;
+    border-top: 1px solid whitesmoke;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer-left, .footer-right {
+    width: 50%;
+    font-size: 14px;
+}
+
+.copyright, .social {
+    font-weight: bold;
+}
+
+.social {
+    text-align: left;
+}
+
+.social a.social-icon {
+    margin-right: 10px;
+}
+
+.social a.social-icon img {
+    width: 50px;
+    height: auto;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+.texto-apresentacao {
+    width: 50%;
+}
+
+.projeto-calculadora {
+    width: 50%;
+}
+
+#voltar-pagina {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

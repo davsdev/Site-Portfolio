@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora.exe</title>
+    <link rel="stylesheet" href="/stylesheetcalc.css" />
+</head>
+<body>
+    <main>
+        <section class="descricao-projeto">
+            <div class="texto-apresentacao">
+                <h4>Origem e Evolução da Calculadora</h4>
+                <p>Desde a antiguidade, a humanidade buscava formas de simplificar cálculos complexos. A história da calculadora remonta a tempos antigos, com o ábaco sendo um dos primeiros dispositivos de cálculo há mais de dois mil anos. Com o passar dos séculos, mentes brilhantes como Blaise Pascal e Gottfried Wilhelm Leibniz contribuíram para o desenvolvimento de calculadoras mecânicas. No entanto, foi no século XX que as calculadoras eletrônicas revolucionaram a maneira como realizamos cálculos, tornando-os mais eficientes.</p>
+                <h4>Bem-Vindo à Calculadora Digital</h4>
+                <p>Hoje, as calculadoras digitais tornam as operações matemáticas mais acessíveis do que nunca. Nosso projeto de calculadora oferece a simplicidade de realizar operações matemáticas básicas, como adição e subtração, de maneira rápida e intuitiva. Nossa missão é fornecer uma ferramenta que simplifica sua vida e torna tarefas matemáticas mais fáceis e eficientes. Sinta-se bem-vindo a explorar a nossa calculadora digital, onde a matemática se torna mais amigável e acessível.</p>
+            </div>            
+        </section>
+        <section class="calculator-container">
+          <div class="calculator">
+            <input type="text" class="calcheader" value="🧮 calc.exe" readonly />
+            <!-- Cria um contêiner para a calculadora -->
+            <input type="text" class="display" id="resultado" readonly />
+            <!-- Botões numéricos e de operação com eventos de clique -->
+            <button class="btn" value="1" onclick="adicionarNumero('1')">1</button>
+            <button class="btn" value="2" onclick="adicionarNumero('2')">2</button>
+            <button class="btn" value="3" onclick="adicionarNumero('3')">3</button>
+            <button class="btnoperador" value="+" onclick="adicionarOperador('+')">+</button>
+            <button class="btn" value="4" onclick="adicionarNumero('4')">4</button>
+            <button class="btn" value="5" onclick="adicionarNumero('5')">5</button>
+            <button class="btn" value="6" onclick="adicionarNumero('6')">6</button>
+            <button class="btnoperador" value="-" onclick="adicionarOperador('-')">-</button>
+            <button class="btn" value="7" onclick="adicionarNumero('7')">7</button>
+            <button class="btn" value="8" onclick="adicionarNumero('8')">8</button>
+            <button class="btn" value="9" onclick="adicionarNumero('9')">9</button>
+            <button class="btnoperador" value="*" onclick="adicionarOperador('*')">*</button>
+            <button class="btn" value="0" onclick="adicionarNumero('0')">0</button>
+            <!-- Botões para limpar e calcular -->
+            <button class="btn" value="=" onclick="limpar()">C</button>
+            <button class="btnequal" value="=" onclick="calcular()">=</button>
+            <button class="btnoperador    " value="/" onclick="adicionarOperador('+')">/</button>
+          </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div class="copyright">
+                <p>&copy; 2023</p>
+                <p><a href="#">Davi da Silva</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="social">
+                <p>Social</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/davi-da-silva" target="_blank" class="social-icon">
+                        <img src="/img/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="#" class="social-icon"><img src="/img/github-sign.png" alt="GitHub"></a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="voltar-pagina">
+        <a href="index.html">
+            <img src="/img/back.svg" alt="Voltar ao início" width="50" height="50">
+        </a>
+    </div>    
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/scriptcalc.js"></script>  
+</body>
+</html>
