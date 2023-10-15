@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="icon" href="img/logoico.ico">
+    <title>Sobre | davs</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="logotipo">
+            </a>
+        </div>
+        <nav class="menu-pc">
+            <ul>
+                <li><a href="index.html">_HOME</a></li>
+                <li>
+                    <a href="sobre.html" style="background-color: crimson; color: whitesmoke;">_SOBRE</a>
+                </li>
+                <li><a href="projetos.html">_PROJETOS</a></li>
+                <li><a href="#">_CONTATO</a></li>
+            </ul>
+        </nav>
+        
+
+        <div id="menumobile">
+            <div id="menumobile-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="navmobile" id="navmobile">
+              <ul>
+                <li><a href="index.html">_HOME</a></li>
+                <li><a href="sobre.html">_SOBRE</a></li>
+                <li><a href="projetos.html">_PROJETOS</a></li>
+                <li><a href="#">_CONTATO</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
+
+
+
+        <img id="dark" src="img/darkmode.svg" alt="Dark Mode" onclick="escurecer()" style="width: 40px; height: 40px;">
+    </header>
+    <main>
+        <div id="headertexto">
+        <h1 id="sombra">E aí!</h1>
+        </div>
+
+        <div id="apresentacaomain">
+        <img src="img/profile.jpeg"><img>
+        <p>Sou pernambucano, designer e desenvolvedor front-end em formação.
+        Durante minha carreira, foquei minha produção em design gráfico,
+        no desenvolvimento de marcas e peças para publicidade. 
+        Atualmente venho me desenvolvendo na área de UX/UI e encontrei no front-end
+        mais uma oportunidade de ir além. Pretendo poder entregar a melhor e mais acessível experiência em interfaces digitais.
+        </p>
+        </div>
+
+        <div id="apresentacaocomplemento">
+        <h2>Experiência Profissional</h2>
+        <p>Desde 2014 venho trabalhando enquanto freelancer em design gráfico, com uma passagem no mercado publicitário até 2017.</p>
+        <p>Desde então produzi, sinalizações, (muitos) manuais de identidade visual e desenvolvimento de artes para mídias online e offline.
+        Durante este tempo também tive contato com construção de layout para web e aplicativos.</p>
+        <h2>Formação</h2>
+        <p>Sou bacharel em Design pela UFPE, onde tive a oportunidade de caminhar por várias das áreas de conhecimento desse universo.
+        Minha formação teve um forte direcionamento para o design gráfico, com alguns complementos em design de produto, pois achei importante ter uma base no físico além do digital.</p>
+        <p>Atualmente estou concluindo uma formação em design de interação no CESAR e dando início a minha jornada no front-end através da Softex Recife.</p>    
+        <h2>Offline</h2>
+        <p>Quando não estou trabalhando ou estudando grudado em uma tela, estou grudado em uma tela me divertindo.
+        Sou um entusiasta dos games e do mundo dos heróis, com uma paixão desde novo por Final Fantasy e Mario.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div class="copyright">
+                <p>&copy; 2023</p>
+                <p><a href="#">Davi da Silva</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="social">
+                <p>Social</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/davi-da-silva" target="_blank" class="social-icon">
+                        <img src="img/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/davsdev" target="_blank" class="social-icon"><img src="img/github-sign.png" alt="GitHub"></a>
+                </p>
+            </div>
+        </div>
+    </footer>  
+    <img id="voltar-ao-topo" src="img/top.svg" alt="Voltar ao Topo">
+    <script src="scripts/script.js"></script>  
+</body>
+
+</html>
