@@ -434,9 +434,6 @@ footer a {
 }
 
 @media (max-width: 768px) {
-    main {
-      width: 100%;
-    }
     #apresentacaomain {
       flex-wrap: wrap;
       align-items: center;
@@ -446,6 +443,9 @@ footer a {
     }
     #apresentacaomain img {
       width: 100%; 
+    }
+    #apresentacaocomplemento {
+        width: 100%;
     }
   }
 
